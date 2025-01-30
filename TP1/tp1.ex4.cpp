@@ -7,6 +7,6 @@ int main()
 {
     char *ptr;
     ptr = tab[3];
-    cout << "valeur de *ptr " << (int)*ptr << endl;
+    cout << "valeur de *ptr " << (int)*ptr << endl; // autre commentaire
     return 0;
 }
