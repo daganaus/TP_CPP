@@ -7,5 +7,9 @@
 
 // Function declarations
 int func(int i = 0);
-
+void test_par_valeur(double arg_entree = 0.0);
+void test_par_adresse(double *ptr_entree = nullptr);
+void test_par_reference(double &);
+void increment_argument(double &);
+void affiche_argument(double);
 #endif // HEADERS_HPP
