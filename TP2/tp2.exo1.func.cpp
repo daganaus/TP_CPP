@@ -38,3 +38,16 @@ void affiche_argument(double arg)
 {
   cout << "la valeur de l'argument est : " << arg << endl;
 }
+
+unsigned* TabInt(unsigned tab[], unsigned size)
+{ 
+  unsigned N = size;
+  cout << "la taille du tableau est : " << N << endl;
+  unsigned* ptr = tab;
+  for (unsigned i = 0; i < N; i++)
+    {
+      *ptr = i;
+      ptr++;
+    }
+  return tab;
+}

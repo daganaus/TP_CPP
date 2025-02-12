@@ -5,11 +5,13 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++11
 
 # Target executable (décommenter l'exercice à tester)
-TARGET = tp2.exo4.exe
+TARGET = tp2.exo3.exe
+# TARGET = tp2.exo3.exe
 # TARGET = tp2.exo1.exe 
 
 # Source files (décommenter l'exercice à tester)
-SRCS = tp2.exo1.func.cpp tp2.exo4.cpp
+SRCS = tp2.exo1.func.cpp tp2.exo3.cpp
+#SRCS = tp2.exo1.func.cpp tp2.exo2.cpp
 # SRCS = tp2.exo1.func.cpp tp2.exo1.main.cpp
 
 # Object files

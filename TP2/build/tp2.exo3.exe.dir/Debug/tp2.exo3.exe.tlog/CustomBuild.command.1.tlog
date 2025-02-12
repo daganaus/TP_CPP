@@ -1,0 +1,10 @@
+^C:\USERS\SWANN\TP\TP_CPP\TP_CPP\TP2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Swann/TP/TP_CPP/TP_CPP/TP2 -BC:/Users/Swann/TP/TP_CPP/TP_CPP/TP2/build --check-stamp-file C:/Users/Swann/TP/TP_CPP/TP_CPP/TP2/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
