@@ -1,5 +1,4 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++11
 
 # Nom de l'exécutable
 TARGET = point_test.exe
