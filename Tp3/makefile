@@ -1,27 +1,35 @@
 CXX = g++
 
-# Nom de l'exécutable
+# Compiler flags
+CXXFLAGS = -Wall -std=c++11
+
+# Target executable (décommenter l'exercice à tester)
 TARGET = point_test.exe
+# TARGET = tp2.exo3.exe
+# TARGET = tp2.exo1.exe 
 
-# Fichiers sources
-SRCS = point.cpp point_test.cpp
+# Source files (décommenter l'exercice à tester)
+SRCS = Point.cpp point_test.cpp
+#SRCS = tp2.exo1.func.cpp tp2.exo2.cpp
+# SRCS = tp2.exo1.func.cpp tp2.exo1.main.cpp
 
-# Fichiers objets
+# Object files
 OBJS = $(SRCS:.cpp=.o)
 
-# Règle par défaut
+# Default target
 all: $(TARGET)
 
-# Règle pour créer l'exécutable
+# Link the object files to create the executable
 $(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
 
-# Règle pour créer les fichiers objets
-%.o: %.cpp point.hpp
-	$(CXX) $(CXXFLAGS) -c $<
+# Compile the source files into object files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Règle pour nettoyer les fichiers objets et l'exécutable
+# Clean up build files
 clean:
 	rm -f $(OBJS) $(TARGET)
 
+# Phony targets
 .PHONY: all clean
