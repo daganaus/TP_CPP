@@ -11,9 +11,19 @@ class Vecteur
    double* ptab;
    static double* psauv;
  public :
-   Vecteur();
-   Vecteur(int);   
-   Vecteur(int, double*);
+ // Constructeurs
+    Vecteur();
+    Vecteur(int);   
+    Vecteur(int, double*);
+ // Destructeur
+    ~Vecteur(); 
+ // Accesseurs
+    int getn();
+    double* getptab();
+    double getptab(int);
+ // Fonctions membres
+    void affiche();
+
 };
 
 

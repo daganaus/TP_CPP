@@ -17,7 +17,11 @@ class Point
         Point(double x, double y); //constructeur avec parametres
         Point(const Point &p); //constructeur de copie
     //les fonctions membres
-        void affiche();     
+        void affiche();
+        double getx();
+        double gety();
+        void setx(double);
+        void sety(double);    
 };
 
 #endif // POINT_HPP

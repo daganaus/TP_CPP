@@ -12,5 +12,9 @@ int main(){
     Point p_copy(p_param);
     p_copy.affiche();
 
+    p_default.setx(p_param.getx());
+    p_default.sety(p_param.gety());
+
+    p_default.affiche();
     return 0;
 }

@@ -28,3 +28,19 @@ using namespace std;
         cout << "la coordonnée y est : " << y << endl;
         cout << "le point est stockée à l'adresse : " << this << endl;
     } //fonction membre d'affichage    
+    
+    double Point::getx(){
+        return x;
+    } //fonction membre de récupération de x
+
+    double Point::gety(){
+        return y;
+    } //fonction membre de récupération de y
+
+    void Point::setx(double x_set){
+        x = x_set;
+    }
+
+    void Point::sety(double y_set){
+        y = y_set;
+    }

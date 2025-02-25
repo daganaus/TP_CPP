@@ -4,14 +4,13 @@ CXX = g++
 CXXFLAGS = -Wall -std=c++11
 
 # Target executable (décommenter l'exercice à tester)
-TARGET = point_test.exe
-# TARGET = tp2.exo3.exe
-# TARGET = tp2.exo1.exe 
+#TARGET = point_test.exe
+TARGET = vecteur_test.exe
+
 
 # Source files (décommenter l'exercice à tester)
-SRCS = Point.cpp point_test.cpp
-#SRCS = tp2.exo1.func.cpp tp2.exo2.cpp
-# SRCS = tp2.exo1.func.cpp tp2.exo1.main.cpp
+#SRCS = Point.cpp point_test.cpp
+SRCS = vecteur.cpp vecteur_test.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
