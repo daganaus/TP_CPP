@@ -6,13 +6,14 @@ using namespace std;
 
 class Vecteur
 {
- public :
-   int n;
-   double* ptab;
-   static double* psauv;
+ private :
+   int dimension; // dimension du vecteur
+   double* ptab; // pointeur sur le tableau des composantes
+   static double* psauv; // pointeur sur le tableau des composantes sauvegardées
+   void allocation(int);  // Fonction membre d'allocation privée peut être utilisée dans différents constructeurs
  public :
  // Constructeurs
-    Vecteur();
+    //Vecteur();
     Vecteur(int);   
     Vecteur(int, double*);
  // Destructeur
