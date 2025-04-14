@@ -10,7 +10,7 @@ TARGET = vecteur_test.exe
 
 # Source files (décommenter l'exercice à tester)
 #SRCS = Point.cpp point_test.cpp
-SRCS = vecteur.cpp vecteur_test.cpp
+SRCS = main.cpp vecteur.cpp #vecteur_test.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)
