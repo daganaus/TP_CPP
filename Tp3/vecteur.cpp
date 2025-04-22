@@ -101,3 +101,19 @@ void Vecteur::affiche()
          cout << "\n" <<ptab[i] << " ";
          cout << endl;}
    }  //Vecteur::affiche()
+
+// Fonctions amies
+
+int amis(const Vecteur& v1, const Vecteur& v2){
+   if (v1.dimension == v2.dimension){
+      return 0; // les vecteurs ont la même dimension
+   }
+   if (v1.dimension > v2.dimension){
+      return 1; // le premier vecteur est plus grand
+   }
+   if (v1.dimension < v2.dimension){
+      return -1; // le deuxième vecteur est plus grand
+   }
+   cerr << "Erreur" << endl;
+   return -2; // erreur
+}

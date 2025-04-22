@@ -5,12 +5,12 @@ CXXFLAGS = -Wall -std=c++11
 
 # Target executable (décommenter l'exercice à tester)
 #TARGET = point_test.exe
-TARGET = vecteur_test.exe
+TARGET = test_amis.exe
 
 
 # Source files (décommenter l'exercice à tester)
 #SRCS = Point.cpp point_test.cpp
-SRCS = main.cpp vecteur.cpp #vecteur_test.cpp
+SRCS = test_amis.cpp vecteur.cpp #vecteur_test.cpp
 
 # Object files
 OBJS = $(SRCS:.cpp=.o)

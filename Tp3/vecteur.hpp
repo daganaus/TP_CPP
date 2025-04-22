@@ -6,7 +6,7 @@ using namespace std;
 
 class Vecteur
 {
- public :
+ private :
    int dimension; // dimension du vecteur
    double* ptab; // pointeur sur le tableau des composantes
    static double* ptabSauv; // pointeur sur le tableau des composantes sauvegardées
@@ -26,6 +26,8 @@ class Vecteur
     double getptab(int);
  // Fonctions membres
     void affiche();
+ // Fonctions amies
+    friend int amis(const Vecteur&, const Vecteur&);
 
 };
 
